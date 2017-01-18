@@ -26,11 +26,9 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         view.addSubview(loginButton)
         loginButton.center = view.center
         loginButton.delegate = self
-        
         if let token = FBSDKAccessToken.current() {
             fetchProfile()
         }
-
     }
     
     func fetchProfile(){
@@ -68,20 +66,15 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    //delegate methods
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         print("Completed login")
-        
     }
-    
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
-        
     }
-    
     func loginButtonWillLogin(_ loginButton: FBSDKLoginButton!) -> Bool {
         return true
     }
-
-
 }
 
