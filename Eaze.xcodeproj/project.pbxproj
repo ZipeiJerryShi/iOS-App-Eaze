@@ -18,6 +18,8 @@
 		7A49FE461E2F23070021D412 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A49FE421E2F23070021D412 /* FBSDKLoginKit.framework */; };
 		7A49FE471E2F23070021D412 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A49FE431E2F23070021D412 /* FBSDKShareKit.framework */; };
 		7A49FE4B1E2F25130021D412 /* NSMutableArray+FBbridgingHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A49FE4A1E2F25130021D412 /* NSMutableArray+FBbridgingHeader.m */; };
+		7A8702A81E30688D00303E85 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8702A71E30688D00303E85 /* Global.swift */; };
+		7A8702AA1E306A7D00303E85 /* userViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8702A91E306A7D00303E85 /* userViewController.swift */; };
 		86C01F57B97FB4778C04B83A /* Pods_Eaze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2CAA852E4A782909CE29C1 /* Pods_Eaze.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		7A49FE481E2F25120021D412 /* Eaze-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Eaze-Bridging-Header.h"; sourceTree = "<group>"; };
 		7A49FE491E2F25130021D412 /* NSMutableArray+FBbridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+FBbridgingHeader.h"; sourceTree = "<group>"; };
 		7A49FE4A1E2F25130021D412 /* NSMutableArray+FBbridgingHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+FBbridgingHeader.m"; sourceTree = "<group>"; };
+		7A8702A71E30688D00303E85 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		7A8702A91E306A7D00303E85 /* userViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userViewController.swift; sourceTree = "<group>"; };
 		9A2CAA852E4A782909CE29C1 /* Pods_Eaze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eaze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B810C0324E2A580EADBE8E5B /* Pods-Eaze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eaze.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eaze/Pods-Eaze.debug.xcconfig"; sourceTree = "<group>"; };
 		CA057D7C373F49FE141167BB /* Pods-Eaze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eaze.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eaze/Pods-Eaze.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,8 +92,9 @@
 		7A49FE2A1E2F12F40021D412 /* Eaze */ = {
 			isa = PBXGroup;
 			children = (
+				7A8702A71E30688D00303E85 /* Global.swift */,
 				7A49FE2B1E2F12F40021D412 /* AppDelegate.swift */,
-				7A49FE2D1E2F12F40021D412 /* ViewController.swift */,
+				7A8702AB1E306A8400303E85 /* ViewControllers */,
 				7A49FE2F1E2F12F40021D412 /* Main.storyboard */,
 				7A49FE351E2F12F40021D412 /* Assets.xcassets */,
 				7A49FE371E2F12F40021D412 /* LaunchScreen.storyboard */,
@@ -100,6 +105,15 @@
 				7A49FE481E2F25120021D412 /* Eaze-Bridging-Header.h */,
 			);
 			path = Eaze;
+			sourceTree = "<group>";
+		};
+		7A8702AB1E306A8400303E85 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7A49FE2D1E2F12F40021D412 /* ViewController.swift */,
+				7A8702A91E306A7D00303E85 /* userViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		CC20FEB98651EBC0F899BBBD /* Frameworks */ = {
@@ -242,6 +256,8 @@
 				7A49FE4B1E2F25130021D412 /* NSMutableArray+FBbridgingHeader.m in Sources */,
 				7A49FE2E1E2F12F40021D412 /* ViewController.swift in Sources */,
 				7A49FE2C1E2F12F40021D412 /* AppDelegate.swift in Sources */,
+				7A8702AA1E306A7D00303E85 /* userViewController.swift in Sources */,
+				7A8702A81E30688D00303E85 /* Global.swift in Sources */,
 				7A49FE341E2F12F40021D412 /* Eaze.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

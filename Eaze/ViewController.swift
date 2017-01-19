@@ -49,16 +49,26 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
                         return
                 }
                 
+                GlobalVariables.userFirstName = first_name
+                GlobalVariables.userLastName = last_name
+                GlobalVariables.userId = user_id_fb
+                GlobalVariables.userEmail = email
+                GlobalVariables.userGender = user_gender
+                
                 print(email) //getting the email of the user
                 print(first_name) //user name
                 print(last_name)
                 print(user_gender) //user gender
                 print(user_id_fb) //facebook id
+                
                 if let picture = result["picture"] as? [String:Any] ,
                     let imgData = picture["data"] as? [String:Any] ,
                     let imgUrl = imgData["url"] as? String {
+                    GlobalVariables.userPicUrl = imgUrl
                     print(imgUrl)   //profile image url
                 }
+                self.performSegue(withIdentifier: "loginToAppSegue", sender: self)
+                
             })
     }
 
@@ -70,6 +80,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     //delegate methods
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         print("Completed login")
+        self.performSegue(withIdentifier: "loginToAppSegue", sender: self)
     }
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
     }
