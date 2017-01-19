@@ -34,7 +34,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     func fetchProfile(){
         print("Fetch Profile")
         
-        FBSDKGraphRequest(graphPath: "me", parameters: ["fields" : "email, first_name, last_name, id, gender, picture"])
+        FBSDKGraphRequest(graphPath: "me", parameters: ["fields" : "email, first_name, last_name, id, gender, picture.type(large)"])
             .start(completionHandler:  {
                 (connection, result, error) in
                 guard
@@ -61,12 +61,17 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
                 print(user_gender) //user gender
                 print(user_id_fb) //facebook id
                 
-                if let picture = result["picture"] as? [String:Any] ,
+                /*
+                if let picture = result["picture.type(large)"] as? [String:Any] ,
                     let imgData = picture["data"] as? [String:Any] ,
                     let imgUrl = imgData["url"] as? String {
                     GlobalVariables.userPicUrl = imgUrl
                     print(imgUrl)   //profile image url
-                }
+                }*/
+                
+                let profilePicUrl = "https://graph.facebook.com/\(user_id_fb)/picture?type=large&return_ssl_resources=1"
+                GlobalVariables.userPicUrl = profilePicUrl
+                print(GlobalVariables.userPicUrl)
                 self.performSegue(withIdentifier: "loginToAppSegue", sender: self)
                 
             })

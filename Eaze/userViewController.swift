@@ -24,6 +24,14 @@ class userViewController: UIViewController {
 
     @IBOutlet var userProfilePic: UIImageView!
     
+    func setCircleImage() {
+        //self.userProfilePic.layer.borderWidth = 1
+        self.userProfilePic.layer.masksToBounds = false
+        //self.userProfilePic.layer.borderColor = UIColor.white.cgColor
+        self.userProfilePic.layer.cornerRadius = self.userProfilePic.frame.height/2
+        self.userProfilePic.clipsToBounds = true
+    }
+    
     func getDataFromUrl(url: URL, completion: @escaping (_ data: Data?, _  response: URLResponse?, _ error: Error?) -> Void) {
         URLSession.shared.dataTask(with: url) {
             (data, response, error) in
@@ -57,6 +65,7 @@ class userViewController: UIViewController {
     
     override func viewDidLoad() {
         setUserInfo()
+        setCircleImage()
         downloadImage()
     }
     
