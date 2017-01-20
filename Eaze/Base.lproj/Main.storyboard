@@ -39,7 +39,7 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
-        <!--Item 2-->
+        <!--Rewards-->
         <scene sceneID="MAD-L4-EFL">
             <objects>
                 <viewController id="Tig-Ko-u2c" sceneMemberID="viewController">
@@ -52,13 +52,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="ORY-2q-St0"/>
+                    <tabBarItem key="tabBarItem" title="Rewards" id="ORY-2q-St0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ea-l9-VAh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1838" y="36"/>
         </scene>
-        <!--Item-->
+        <!--User-->
         <scene sceneID="t1b-TT-cI3">
             <objects>
                 <viewController id="rPF-7J-84U" customClass="userViewController" customModule="Eaze" customModuleProvider="target" sceneMemberID="viewController">
@@ -113,7 +113,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Cwa-S4-S9I"/>
+                    <tabBarItem key="tabBarItem" title="User" id="Cwa-S4-S9I"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="userEmail" destination="LFI-cS-EGr" id="zWI-Nf-dve"/>
@@ -128,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="1837.5999999999999" y="706.59670164917543"/>
         </scene>
-        <!--Item 1-->
+        <!--Search-->
         <scene sceneID="cZu-kA-GTN">
             <objects>
-                <viewController id="9Uu-G3-KFH" sceneMemberID="viewController">
+                <viewController id="9Uu-G3-KFH" customClass="nearbyViewController" customModule="Eaze" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ze0-pe-iqf"/>
                         <viewControllerLayoutGuide type="bottom" id="Mxj-Xk-jci"/>
@@ -139,13 +139,82 @@
                     <view key="view" contentMode="scaleToFill" id="H6g-tA-dSO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ZD-pH-fUO">
+                                <rect key="frame" x="118" y="142" width="138" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get current location"/>
+                                <connections>
+                                    <segue destination="WNL-fj-HXz" kind="presentation" modalTransitionStyle="coverVertical" id="iiz-HU-SJU"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Rij-DM-Ppi"/>
+                    <tabBarItem key="tabBarItem" title="Search" id="Rij-DM-Ppi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qlL-xk-VCP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1838" y="-640"/>
+            <point key="canvasLocation" x="1837.5999999999999" y="-640.02998500749629"/>
+        </scene>
+        <!--Set Location-->
+        <scene sceneID="dOs-Vk-Epb">
+            <objects>
+                <viewController id="PND-uG-9Hq" customClass="currentLocViewController" customModule="Eaze" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kE2-h2-XQH"/>
+                        <viewControllerLayoutGuide type="bottom" id="lzm-4a-Dy2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5dR-VA-Zou">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZ8-n5-llm">
+                                <rect key="frame" x="16" y="324" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oj4-rk-6JV">
+                                <rect key="frame" x="16" y="364" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="street" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A90-xa-MNL">
+                                <rect key="frame" x="16" y="401" width="343" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="biX-YZ-L1h">
+                                <rect key="frame" x="16" y="98" width="343" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Set Location" id="LWN-TC-Q37">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="MKH-He-hxl"/>
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="2pY-FY-dkz">
+                            <connections>
+                                <segue destination="Bdh-cV-YTs" kind="presentation" modalTransitionStyle="crossDissolve" id="O1r-e1-Z3L"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="currentLat" destination="oZ8-n5-llm" id="D7R-On-b5k"/>
+                        <outlet property="currentLon" destination="Oj4-rk-6JV" id="B6a-K7-HKF"/>
+                        <outlet property="currentMapView" destination="biX-YZ-L1h" id="lmu-xN-Z8h"/>
+                        <outlet property="currentStreet" destination="A90-xa-MNL" id="eRQ-C0-1bC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hwT-gS-odD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3600.8000000000002" y="-640.02998500749629"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="tOb-UW-2zn">
@@ -166,5 +235,26 @@
             </objects>
             <point key="canvasLocation" x="889" y="36"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lKS-oi-VoI">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PRG-iE-9Qg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WNL-fj-HXz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xhh-1p-f5M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PND-uG-9Hq" kind="relationship" relationship="rootViewController" id="U1n-O3-uND"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="2661.5999999999999" y="-640.02998500749629"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="O1r-e1-Z3L"/>
+    </inferredMetricsTieBreakers>
 </document>
