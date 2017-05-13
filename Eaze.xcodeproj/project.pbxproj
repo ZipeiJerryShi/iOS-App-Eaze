@@ -18,11 +18,22 @@
 		7A49FE461E2F23070021D412 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A49FE421E2F23070021D412 /* FBSDKLoginKit.framework */; };
 		7A49FE471E2F23070021D412 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A49FE431E2F23070021D412 /* FBSDKShareKit.framework */; };
 		7A49FE4B1E2F25130021D412 /* NSMutableArray+FBbridgingHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A49FE4A1E2F25130021D412 /* NSMutableArray+FBbridgingHeader.m */; };
+		7A4BF01C1E85F316009825C8 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BF01B1E85F316009825C8 /* DataController.swift */; };
+		7A5D807F1E778E120074DF7C /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D807E1E778E120074DF7C /* EditProfileTableViewController.swift */; };
+		7A5D80811E778E340074DF7C /* ChangeProfilePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D80801E778E340074DF7C /* ChangeProfilePictureViewController.swift */; };
+		7A5D80841E7790AB0074DF7C /* ServerCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D80831E7790AB0074DF7C /* ServerCalls.swift */; };
+		7A5D80871E7790CC0074DF7C /* CoreDataMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D80861E7790CC0074DF7C /* CoreDataMethods.swift */; };
+		7A5D808B1E7791480074DF7C /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D80891E7791480074DF7C /* User+CoreDataClass.swift */; };
+		7A5D808C1E7791480074DF7C /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D808A1E7791480074DF7C /* User+CoreDataProperties.swift */; };
 		7A8702A81E30688D00303E85 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8702A71E30688D00303E85 /* Global.swift */; };
-		7A8702AA1E306A7D00303E85 /* userViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8702A91E306A7D00303E85 /* userViewController.swift */; };
-		7AA9734B1E31C62200ABCC85 /* nearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9734A1E31C62200ABCC85 /* nearbyViewController.swift */; };
+		7AA266281E635AA6000598D4 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA266271E635AA6000598D4 /* OnboardingPageViewController.swift */; };
+		7AA2662A1E635ADE000598D4 /* OnboardingSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA266291E635ADE000598D4 /* OnboardingSubViewController.swift */; };
 		7AA9734D1E31CA1900ABCC85 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA9734C1E31CA1900ABCC85 /* CoreLocation.framework */; };
 		7AA9734F1E31CB6600ABCC85 /* currentLocViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9734E1E31CB6600ABCC85 /* currentLocViewController.swift */; };
+		7AACFF941E907C2C002EAD13 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AACFF931E907C2C002EAD13 /* FavoriteTableViewCell.swift */; };
+		7AE2C5F31E5FE5FC00C7218D /* SearchBarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2C5F21E5FE5FC00C7218D /* SearchBarTableViewCell.swift */; };
+		7AFE578B1E535D2700772C1D /* NearbyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE578A1E535D2700772C1D /* NearbyTableViewController.swift */; };
+		7AFE578F1E54BD5100772C1D /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE578E1E54BD5100772C1D /* profileViewController.swift */; };
 		86C01F57B97FB4778C04B83A /* Pods_Eaze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2CAA852E4A782909CE29C1 /* Pods_Eaze.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,11 +53,24 @@
 		7A49FE481E2F25120021D412 /* Eaze-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Eaze-Bridging-Header.h"; sourceTree = "<group>"; };
 		7A49FE491E2F25130021D412 /* NSMutableArray+FBbridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+FBbridgingHeader.h"; sourceTree = "<group>"; };
 		7A49FE4A1E2F25130021D412 /* NSMutableArray+FBbridgingHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+FBbridgingHeader.m"; sourceTree = "<group>"; };
+		7A4BF01B1E85F316009825C8 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		7A5D807E1E778E120074DF7C /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
+		7A5D80801E778E340074DF7C /* ChangeProfilePictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeProfilePictureViewController.swift; sourceTree = "<group>"; };
+		7A5D80831E7790AB0074DF7C /* ServerCalls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerCalls.swift; sourceTree = "<group>"; };
+		7A5D80861E7790CC0074DF7C /* CoreDataMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataMethods.swift; sourceTree = "<group>"; };
+		7A5D80891E7791480074DF7C /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7A5D808A1E7791480074DF7C /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7A5D808D1E7791720074DF7C /* Eaze1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Eaze1.xcdatamodel; sourceTree = "<group>"; };
 		7A8702A71E30688D00303E85 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
-		7A8702A91E306A7D00303E85 /* userViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userViewController.swift; sourceTree = "<group>"; };
-		7AA9734A1E31C62200ABCC85 /* nearbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = nearbyViewController.swift; sourceTree = "<group>"; };
+		7AA266271E635AA6000598D4 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		7AA266291E635ADE000598D4 /* OnboardingSubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingSubViewController.swift; sourceTree = "<group>"; };
 		7AA9734C1E31CA1900ABCC85 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7AA9734E1E31CB6600ABCC85 /* currentLocViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = currentLocViewController.swift; sourceTree = "<group>"; };
+		7AACFF931E907C2C002EAD13 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		7AD51D531E86C7C8007EE401 /* Eaze2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Eaze2.xcdatamodel; sourceTree = "<group>"; };
+		7AE2C5F21E5FE5FC00C7218D /* SearchBarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarTableViewCell.swift; sourceTree = "<group>"; };
+		7AFE578A1E535D2700772C1D /* NearbyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyTableViewController.swift; sourceTree = "<group>"; };
+		7AFE578E1E54BD5100772C1D /* profileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		9A2CAA852E4A782909CE29C1 /* Pods_Eaze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eaze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B810C0324E2A580EADBE8E5B /* Pods-Eaze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eaze.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eaze/Pods-Eaze.debug.xcconfig"; sourceTree = "<group>"; };
 		CA057D7C373F49FE141167BB /* Pods-Eaze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eaze.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eaze/Pods-Eaze.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,12 +123,12 @@
 		7A49FE2A1E2F12F40021D412 /* Eaze */ = {
 			isa = PBXGroup;
 			children = (
+				7A5D80881E7791090074DF7C /* CoreDataManagedObjects */,
 				7A8702A71E30688D00303E85 /* Global.swift */,
 				7A49FE2B1E2F12F40021D412 /* AppDelegate.swift */,
-				7A8702AB1E306A8400303E85 /* ViewControllers */,
-				7A49FE2F1E2F12F40021D412 /* Main.storyboard */,
 				7A49FE351E2F12F40021D412 /* Assets.xcassets */,
-				7A49FE371E2F12F40021D412 /* LaunchScreen.storyboard */,
+				7A8702AB1E306A8400303E85 /* ViewControllers */,
+				7A4BF01D1E869B6D009825C8 /* storyboard */,
 				7A49FE3A1E2F12F40021D412 /* Info.plist */,
 				7A49FE321E2F12F40021D412 /* Eaze.xcdatamodeld */,
 				7A49FE491E2F25130021D412 /* NSMutableArray+FBbridgingHeader.h */,
@@ -114,9 +138,48 @@
 			path = Eaze;
 			sourceTree = "<group>";
 		};
+		7A4BF01D1E869B6D009825C8 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7A49FE2F1E2F12F40021D412 /* Main.storyboard */,
+				7A49FE371E2F12F40021D412 /* LaunchScreen.storyboard */,
+			);
+			name = storyboard;
+			sourceTree = "<group>";
+		};
+		7A5D807D1E778DE50074DF7C /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				7A5D807E1E778E120074DF7C /* EditProfileTableViewController.swift */,
+				7A5D80801E778E340074DF7C /* ChangeProfilePictureViewController.swift */,
+			);
+			name = EditProfile;
+			sourceTree = "<group>";
+		};
+		7A5D80821E7790700074DF7C /* ManageData */ = {
+			isa = PBXGroup;
+			children = (
+				7A4BF01B1E85F316009825C8 /* DataController.swift */,
+				7A5D80861E7790CC0074DF7C /* CoreDataMethods.swift */,
+				7A5D80831E7790AB0074DF7C /* ServerCalls.swift */,
+			);
+			name = ManageData;
+			sourceTree = "<group>";
+		};
+		7A5D80881E7791090074DF7C /* CoreDataManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				7A5D80891E7791480074DF7C /* User+CoreDataClass.swift */,
+				7A5D808A1E7791480074DF7C /* User+CoreDataProperties.swift */,
+			);
+			name = CoreDataManagedObjects;
+			sourceTree = "<group>";
+		};
 		7A8702AB1E306A8400303E85 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				7A5D80821E7790700074DF7C /* ManageData */,
+				7A5D807D1E778DE50074DF7C /* EditProfile */,
 				7AA973481E31C5CF00ABCC85 /* signupLogin */,
 				7AA973491E31C5EA00ABCC85 /* location */,
 				7AA973471E31C5BB00ABCC85 /* user */,
@@ -127,7 +190,7 @@
 		7AA973471E31C5BB00ABCC85 /* user */ = {
 			isa = PBXGroup;
 			children = (
-				7A8702A91E306A7D00303E85 /* userViewController.swift */,
+				7AFE578E1E54BD5100772C1D /* profileViewController.swift */,
 			);
 			name = user;
 			sourceTree = "<group>";
@@ -135,7 +198,9 @@
 		7AA973481E31C5CF00ABCC85 /* signupLogin */ = {
 			isa = PBXGroup;
 			children = (
+				7AA266271E635AA6000598D4 /* OnboardingPageViewController.swift */,
 				7A49FE2D1E2F12F40021D412 /* ViewController.swift */,
+				7AA266291E635ADE000598D4 /* OnboardingSubViewController.swift */,
 			);
 			name = signupLogin;
 			sourceTree = "<group>";
@@ -143,8 +208,10 @@
 		7AA973491E31C5EA00ABCC85 /* location */ = {
 			isa = PBXGroup;
 			children = (
-				7AA9734A1E31C62200ABCC85 /* nearbyViewController.swift */,
 				7AA9734E1E31CB6600ABCC85 /* currentLocViewController.swift */,
+				7AFE578A1E535D2700772C1D /* NearbyTableViewController.swift */,
+				7AE2C5F21E5FE5FC00C7218D /* SearchBarTableViewCell.swift */,
+				7AACFF931E907C2C002EAD13 /* FavoriteTableViewCell.swift */,
 			);
 			name = location;
 			sourceTree = "<group>";
@@ -287,14 +354,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A5D80871E7790CC0074DF7C /* CoreDataMethods.swift in Sources */,
 				7A49FE4B1E2F25130021D412 /* NSMutableArray+FBbridgingHeader.m in Sources */,
 				7AA9734F1E31CB6600ABCC85 /* currentLocViewController.swift in Sources */,
+				7AFE578B1E535D2700772C1D /* NearbyTableViewController.swift in Sources */,
 				7A49FE2E1E2F12F40021D412 /* ViewController.swift in Sources */,
+				7AA2662A1E635ADE000598D4 /* OnboardingSubViewController.swift in Sources */,
+				7A5D808B1E7791480074DF7C /* User+CoreDataClass.swift in Sources */,
+				7A5D807F1E778E120074DF7C /* EditProfileTableViewController.swift in Sources */,
+				7A5D80841E7790AB0074DF7C /* ServerCalls.swift in Sources */,
 				7A49FE2C1E2F12F40021D412 /* AppDelegate.swift in Sources */,
-				7A8702AA1E306A7D00303E85 /* userViewController.swift in Sources */,
+				7AE2C5F31E5FE5FC00C7218D /* SearchBarTableViewCell.swift in Sources */,
 				7A8702A81E30688D00303E85 /* Global.swift in Sources */,
+				7AFE578F1E54BD5100772C1D /* profileViewController.swift in Sources */,
+				7A4BF01C1E85F316009825C8 /* DataController.swift in Sources */,
+				7A5D808C1E7791480074DF7C /* User+CoreDataProperties.swift in Sources */,
 				7A49FE341E2F12F40021D412 /* Eaze.xcdatamodeld in Sources */,
-				7AA9734B1E31C62200ABCC85 /* nearbyViewController.swift in Sources */,
+				7AA266281E635AA6000598D4 /* OnboardingPageViewController.swift in Sources */,
+				7AACFF941E907C2C002EAD13 /* FavoriteTableViewCell.swift in Sources */,
+				7A5D80811E778E340074DF7C /* ChangeProfilePictureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +501,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Eaze/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eazeapp.Eaze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +523,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Eaze/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eazeapp.Eaze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -479,9 +559,11 @@
 		7A49FE321E2F12F40021D412 /* Eaze.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				7AD51D531E86C7C8007EE401 /* Eaze2.xcdatamodel */,
+				7A5D808D1E7791720074DF7C /* Eaze1.xcdatamodel */,
 				7A49FE331E2F12F40021D412 /* Eaze.xcdatamodel */,
 			);
-			currentVersion = 7A49FE331E2F12F40021D412 /* Eaze.xcdatamodel */;
+			currentVersion = 7AD51D531E86C7C8007EE401 /* Eaze2.xcdatamodel */;
 			path = Eaze.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

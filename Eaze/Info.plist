@@ -56,5 +56,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Eaze requires access to the photo library.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Eaze requires access to the camera.</string>
 </dict>
 </plist>

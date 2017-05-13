@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FoldingCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Eaze.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -14,15 +24,35 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>expanding-collection.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3BFCB328CE0F0D838545D2D5CB11FF01</key>
+		<key>4C67514EA7D98658F641516ED8328206</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BECAB671B9A90BFAE63F58083936374D</key>
+		<key>766C06B5B5AEBFF74388AF586121E9A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>895E58B27280F8B137E07DEAB45C1B2B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B626E472969D6F87698AF0041EAAFC38</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -6,6 +6,9 @@ target 'Eaze' do
   use_frameworks!
 
   # Pods for Eaze
-pod 'SnapKit', '~> 3.1.2'
+  pod 'Alamofire', '~> 4.0'
+  pod 'SnapKit', '~> 3.1.2'
+  pod 'expanding-collection', '~> 1.0.3'
+  pod 'FoldingCell', '~> 2.0.3'
 
 end

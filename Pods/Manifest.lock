@@ -1,12 +1,21 @@
 PODS:
+  - Alamofire (4.4.0)
+  - expanding-collection (1.0.4)
+  - FoldingCell (2.0.3)
   - SnapKit (3.1.2)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - expanding-collection (~> 1.0.3)
+  - FoldingCell (~> 2.0.3)
   - SnapKit (~> 3.1.2)
 
 SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  expanding-collection: be78b5822d7382d3da02b52d52273f4661567a64
+  FoldingCell: 2f3113051609167776743415fc00ed877ac6d62c
   SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
 
-PODFILE CHECKSUM: 2161d44976d1534f5a68985b089c59595af853a3
+PODFILE CHECKSUM: 3373a15631492305952afcd8082cb97333c80123
 
 COCOAPODS: 1.1.1

@@ -14,10 +14,6 @@ class currentLocViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet var currentMapView: MKMapView!
     
-    @IBOutlet var currentLat: UILabel!
-    
-    @IBOutlet var currentLon: UILabel!
-    
     @IBOutlet var currentStreet: UILabel!
     
     var setlocationName: String = ""
@@ -37,9 +33,6 @@ class currentLocViewController: UIViewController, CLLocationManagerDelegate {
         currentMapView.setRegion(region, animated: true)
         
         self.currentMapView.showsUserLocation = true
-        
-        self.currentLat.text = String(location.coordinate.latitude)
-        self.currentLon.text = String(location.coordinate.longitude)
         
         let geoCoder = CLGeocoder()
         let geoLocation = CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
@@ -69,7 +62,7 @@ class currentLocViewController: UIViewController, CLLocationManagerDelegate {
             }
         })
         
-        self.currentStreet.text = "\(setlocationName), \(setstreet), \(setcity), \(setzip), \(setcountry)"
+        self.currentStreet.text = "My location: \(setlocationName), \(setcity)"
     }
     
     func setupCurrentLocation () {
