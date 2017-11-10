@@ -12,3 +12,4 @@ target 'Eaze' do
   pod 'FoldingCell', '~> 2.0.3'
 
 end
+
